@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8"/>
+        <style type="text/css">
+        body {
+            margin : 0;
+            padding : 0;
+        }
+        dl{
+            margin:0;
+            padding : 0;
+        }
+        dd{
+            margin:0;
+            padding:0;
+        }
+        img{
+            display : block;
+            border :0 ;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        a{
+            display: block;
+            color: white;
+            text-align: left;
+            padding: 15px 10px 15px 20px;
+            text-decoration: none;
+            font: "Lucida Grande";
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size:18px;
+            -webkit-text-size-adjust: 100%
+
+            -webkit-transition: all .2s ease-in-out;
+       -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+        a:first-child{
+            margin-top: 20px
+        }
+        a:last-child{
+            margin-bottom: 20px
+        }
+        a:hover{
+            background-color: #0B102F;
+            color: #FFDC67;
+            -webkit-transition: all .2s ease-in-out;
+       -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        .sideNav {
+            height: 100%; /* Full-height: remove this if you want "auto" height */
+            width: 160px; /* Set the width of the sidebar */
+            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: #252B53;/* Black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            scroll-direction: vertical;
+        }
+        .main {
+            margin-left: 160px;
+        }
+        #shadowed {
+            -webkit-filter: drop-shadow(1px 1px 6px rgba(0,0,0,0.3));
+        }
+        @media only screen 
+        and (orientation : portrait) {
+            .sideNav{
+                right: 0;
+                height: 60px;
+                width: 100%;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+            }
+            .main {
+                margin-left: 0px;
+                margin-top: 60px;
+            }
+            a:first-child{
+                margin-left: 20px;
+                margin-top: 0px;
+            }
+            a:last-child{
+                margin-right: 20px;
+                margin-bottom: 0px;
+            }
+            a {
+                padding: 20px 15px 20px 15px;
+                display: inline-block;
+                text-align: center;
+            }
+            #shadowed{
+                width: 60px;
+                height: 60px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="sideNav">
+            <a href="#ob1">Intro</a>
+            <a href="#ob2">Today</a>
+            <a href="#ob3">Demo (Today)</a>
+            <a href="#ob4">Stats</a>
+            <a href="#ob5">Demo (Stats)</a>
+            <a href="#ob6">Goals</a>
+            <a href="#ob7">Demo (Goals)</a>
+            <a href="#ob8">Outro</a>
+            
+        </div>
+
+    <div class="main">
+        <dl>
+            <dd id="ob1">
+                <img src ="images/1.png" width = 100%/>
+            </dd>
+            
+            <dd id="ob2">
+                <img src ="images/2.png" width = 100%/>
+            </dd>
+            
+            <dd style = "background-color :#FCFCFC; padding-top: 20px" id="ob3" >
+                <center>
+                <video controls="" height="500" width=100%> <source src="videos/1.mov" ></video>
+                </center>
+            </dd>
+            <dd id="ob4" >
+                <img src ="images/4.png" width = 100% alt="test image" style="background-color :#FCFCFC; padding-top: 20px"/>
+            </dd>
+            
+            <dd id="ob5" style = "background-color :#FECE2F; padding-top: 20px" >
+                <center>
+                <video controls = "" height="500" width=100%> <source src="videos/2.mov" ></video>
+                </center>
+            </dd>
+            
+            <dd id="ob6">
+                <img src ="images/6.png" width = 100% style="background-color :#FECE2F; padding-top: 20px"/>
+            </dd>
+            
+            <dd style = "background-color :#1362E2; padding-top: 20px" id="ob7">
+            <center>
+            <video controls = "" id="vid3" height="500" width=100%> <source src="videos/3.mov" ></video>
+            </center>
+            </dd>
+            
+            <dd id="ob8">
+                <img src ="images/8.png" width = 100% style="background-color :#1362E2; padding-top: 20px" />
+            </dd>
+        </dl>
+    </div>
+    <img id="shadowed" src ="images/icon.png" width="100px" height="100px" style="bottom: 0; right:0; padding-bottom: 30px; padding-left: 30px; padding-right: 30px; position: fixed;" />
+    
+    </body>
+</html>
+
